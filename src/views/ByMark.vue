@@ -32,7 +32,7 @@ export default {
   },
   created: function() {
     axios
-        .get('https://gradiweb-server.herokuapp.com/api/vehicles/mark')
+        .get('http://127.0.0.1:8000/api/vehicles/mark')
         .then(res => {
           // console.log(res.data.data);
           this.vehicles = res.data.data;

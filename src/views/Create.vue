@@ -120,7 +120,7 @@ export default {
       }
 
       axios
-          .post('https://gradiweb-server.herokuapp.com/api/vehicles/store', data)
+          .post('http://127.0.0.1:8000/api/vehicles/store', data)
           .then(res => {
               console.log(res)
               this.ok = true

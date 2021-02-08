@@ -103,7 +103,7 @@ export default {
     getResults() {
       // alert(this.searchType);
       axios
-          .get("https://gradiweb-server.herokuapp.com/api/vehicles/list?search=" + this.inputSearch + '&type=' + this.searchType)
+          .get("http://127.0.0.1:8000/api/vehicles/list?search=" + this.inputSearch + '&type=' + this.searchType)
           .then(res => {
               // console.log(res.data.data);
               this.vehicles = res.data.data;
